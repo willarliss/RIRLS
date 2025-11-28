@@ -7,6 +7,8 @@ norm = np.linalg.norm
 
 
 def irls(X, Y, theta0=None, max_iter=100, eps=1e-9, actual=None):
+    """Iteratively Reweighted Least Squares for multinomial logistic regression.
+    """
 
     n, m = X.shape
     _, k = Y.shape
@@ -41,6 +43,8 @@ def irls(X, Y, theta0=None, max_iter=100, eps=1e-9, actual=None):
 
 
 def rec_irls(X, Y, theta0=None, icovs0=None, actual=None):
+    """Recursive Iteratively Reweighted Least Squares for (online) multinomial logistic regression.
+    """
 
     n, m = X.shape
     _, k = Y.shape
@@ -80,6 +84,9 @@ def rec_irls(X, Y, theta0=None, icovs0=None, actual=None):
 
 
 def rec_irls_agg(X, Y, theta0=None, icov0=None, actual=None):
+    """Recursive Iteratively Reweighted Least Squares for (online) multinomial logistic regression.
+    Aggregated version with single covariance matrix.
+    """
 
     n, m = X.shape
     _, k = Y.shape
@@ -122,6 +129,8 @@ def rec_irls_agg(X, Y, theta0=None, icov0=None, actual=None):
 
 
 def rec_ls(X, Y, theta0=None, icov0=None, actual=None):
+    """Recursive Least Squares for (online) linear regression.
+    """
 
     n, m = X.shape
     _, k = Y.shape
