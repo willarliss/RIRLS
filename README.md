@@ -14,4 +14,4 @@ Preliminary experiments suggest that RIRLS converges to IRLS:
   <img src="assets/convergence_to_irls.png" width="49%">
 </p>
 
-See the [write up](write-up.pdf) for full technical details. The algorithm implemented in `src.estim.rec_irls` and `src.estim.rec_irls_agg`.
+See the [write-up](write-up.pdf) for full technical details. The algorithm implemented in `src.estim.rec_irls` and `src.estim.rec_irls_agg`.
